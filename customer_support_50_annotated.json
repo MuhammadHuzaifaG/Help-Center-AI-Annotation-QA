@@ -1,0 +1,571 @@
+[
+  {
+    "id": "TW-10001",
+    "raw_text": "@PlayStationHelp My PS5 turns off abruptly after 20 minutes of gameplay with error code CE-108255-1.",
+    "clean_text": "My PS5 turns off abruptly after 20 minutes of gameplay with error code CE-108255-1.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Hardware/software crash during usage. Frustration implicit in sudden shutdowns.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10002",
+    "raw_text": "@Netflixhelp The app keeps crashing on my Samsung Smart TV whenever I launch Stranger Things. Email on account: david.smith99@yahoo.com",
+    "clean_text": "The app keeps crashing on my Samsung Smart TV whenever I launch Stranger Things. Email on account: david.smith99@yahoo.com",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "email"
+    ],
+    "rationale": "App crash bug on specific device. Frustration with repeated failure. Email address triggers PII flag.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10003",
+    "raw_text": "@SpotifyCares Local files won't sync to my mobile app after the 8.9.0 desktop update.",
+    "clean_text": "Local files won't sync to my mobile app after the 8.9.0 desktop update.",
+    "intent": "Technical",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Feature synchronization bug report post-update. Direct statement without emotional exaggeration.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10004",
+    "raw_text": "@AppleSupport Bluetooth disconnects randomly on my MacBook Pro M2 running macOS Sonoma.",
+    "clean_text": "Bluetooth disconnects randomly on my MacBook Pro M2 running macOS Sonoma.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Hardware connectivity bug impacting workflow. Negative sentiment due to unpredictable hardware behavior.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10005",
+    "raw_text": "@DoorDash_Help The checkout button is greyed out on web browser, can't complete my dinner order!",
+    "clean_text": "The checkout button is greyed out on web browser, can't complete my dinner order!",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "UI/web app blocking glitch preventing transaction. High urgency indicated by exclamation mark.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10006",
+    "raw_text": "@MicrosoftHelps Excel formulas are throwing #VALUE! errors after opening macro-enabled sheets in Version 2402.",
+    "clean_text": "Excel formulas are throwing #VALUE! errors after opening macro-enabled sheets in Version 2402.",
+    "intent": "Technical",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Technical software calculation error report with specific build details.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10007",
+    "raw_text": "@Hulu_Support Stream buffering endlessly on FireStick with 300Mbps fiber internet connection.",
+    "clean_text": "Stream buffering endlessly on FireStick with 300Mbps fiber internet connection.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Video playback streaming error despite high connection speed.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10008",
+    "raw_text": "@Steam_Support Game client fails to launch Dota 2 with 'missing executable' error. Tried verifying integrity.",
+    "clean_text": "Game client fails to launch Dota 2 with 'missing executable' error. Tried verifying integrity.",
+    "intent": "Technical",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Software execution bug with step-by-step troubleshooting context provided.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10009",
+    "raw_text": "@ComcastCares Internet downstream signal lost in Seattle 98101 area code. Modem showing red US/DS light.",
+    "clean_text": "Internet downstream signal lost in Seattle 98101 area code. Modem showing red US/DS light.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Network outage and modem hardware failure. Area zip code is public location data (non-PII).",
+    "split": "train"
+  },
+  {
+    "id": "TW-10010",
+    "raw_text": "@Uber_Support App location tracking is 2 miles off. Call me at 415-555-0188 so I can direct driver.",
+    "clean_text": "App location tracking is 2 miles off. Call me at 415-555-0188 so I can direct driver.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "phone_number"
+    ],
+    "rationale": "GPS location accuracy error in app. Explicit phone number triggers PII flag.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10011",
+    "raw_text": "@Google360 Gmail dark mode toggle disappeared after latest Android update.",
+    "clean_text": "Gmail dark mode toggle disappeared after latest Android update.",
+    "intent": "Technical",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "UI regression report following OS update. Emotionally neutral observation.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10012",
+    "raw_text": "@Tesla Software update 2026.20 failed at 80% and touchscreen is unresponsive now!",
+    "clean_text": "Software update 2026.20 failed at 80% and touchscreen is unresponsive now!",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Critical firmware update failure causing system freeze. Strong frustration.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10013",
+    "raw_text": "@NikeService App crashes instantly on opening screen. Reinstalled twice already.",
+    "clean_text": "App crashes instantly on opening screen. Reinstalled twice already.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Persistent app crash on launch preventing interaction.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10014",
+    "raw_text": "@AppleSupport AirDrop not discovering nearby devices despite Wi-Fi and Bluetooth being enabled.",
+    "clean_text": "AirDrop not discovering nearby devices despite Wi-Fi and Bluetooth being enabled.",
+    "intent": "Technical",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Feature connectivity failure report.",
+    "split": "test"
+  },
+  {
+    "id": "TW-10015",
+    "raw_text": "@Lyft App keeps throwing network timeout errors while attempting to request ride.",
+    "clean_text": "App keeps throwing network timeout errors while attempting to request ride.",
+    "intent": "Technical",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Network protocol failure blocking core app action.",
+    "split": "test"
+  },
+  {
+    "id": "TW-10016",
+    "raw_text": "@AmazonHelp Double charged for order #702-1829301-4491823. $34.50 was taken twice from my card!",
+    "clean_text": "Double charged for order #702-1829301-4491823. $34.50 was taken twice from my card!",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "order_id"
+    ],
+    "rationale": "Duplicate charge issue. High negative tone due to monetary loss. Order ID triggers PII.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10017",
+    "raw_text": "@SpotifyCares I requested a subscription refund on March 1st. Email registered is emma.watson@gmail.com",
+    "clean_text": "I requested a subscription refund on March 1st. Email registered is emma.watson@gmail.com",
+    "intent": "Billing",
+    "sentiment": "Neutral",
+    "pii_flag": true,
+    "pii_types": [
+      "email"
+    ],
+    "rationale": "Subscription refund status check. Direct factual inquiry. Email triggers PII.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10018",
+    "raw_text": "@AirbnbHelp Host charged $200 cleaning fee for a 1-night stay that was already canceled! Account name: Robert Johnson.",
+    "clean_text": "Host charged $200 cleaning fee for a 1-night stay that was already canceled! Account name: Robert Johnson.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "full_name"
+    ],
+    "rationale": "Unfair fee dispute post-cancellation. Strong anger. Full legal name triggers PII flag.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10019",
+    "raw_text": "@PayPal Billing statement shows pending fee of $12.50 from unrecognized merchant.",
+    "clean_text": "Billing statement shows pending fee of $12.50 from unrecognized merchant.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Unauthorized charge investigation request.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10020",
+    "raw_text": "@Hulu_Support Can I update my Visa payment method to Mastercard for auto-renew?",
+    "clean_text": "Can I update my Visa payment method to Mastercard for auto-renew?",
+    "intent": "Billing",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Routine payment method modification query.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10021",
+    "raw_text": "@DoorDash_Help Missing refund of $18.20 for incomplete food order placed at 7 PM.",
+    "clean_text": "Missing refund of $18.20 for incomplete food order placed at 7 PM.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Unresolved monetary refund request following order discrepancy.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10022",
+    "raw_text": "@eBayAsk Buyer opened fraudulent return request on item #2938471029. Need seller protection help.",
+    "clean_text": "Buyer opened fraudulent return request on item #2938471029. Need seller protection help.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "order_id"
+    ],
+    "rationale": "Disputed refund/return transaction. Item listing number counts as transaction ID (PII).",
+    "split": "train"
+  },
+  {
+    "id": "TW-10023",
+    "raw_text": "@Uber_Support How do I download my monthly tax receipts for corporate expenses in PDF format?",
+    "clean_text": "How do I download my monthly tax receipts for corporate expenses in PDF format?",
+    "intent": "Billing",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Invoice/tax document retrieval query under billing parameters.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10024",
+    "raw_text": "@Delta Charge of $150 baggage fee applied twice at check-in counter. Ticket #006-293847102.",
+    "clean_text": "Charge of $150 baggage fee applied twice at check-in counter. Ticket #006-293847102.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "order_id"
+    ],
+    "rationale": "Duplicate baggage fee charge. Airline ticket number acts as order ID (PII).",
+    "split": "train"
+  },
+  {
+    "id": "TW-10025",
+    "raw_text": "@Target Applied $10 promo coupon at checkout but discount didn't show on final receipt.",
+    "clean_text": "Applied $10 promo coupon at checkout but discount didn't show on final receipt.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Promotional discount application error affecting total charge.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10026",
+    "raw_text": "@Netflixhelp Where can I view my billing history for the past 12 months?",
+    "clean_text": "Where can I view my billing history for the past 12 months?",
+    "intent": "Billing",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account billing record search.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10027",
+    "raw_text": "@AppleSupport Subscription renewed automatically after I canceled last night! Want my $9.99 back.",
+    "clean_text": "Subscription renewed automatically after I canceled last night! Want my $9.99 back.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Accidental auto-renewal charge dispute demanding refund.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10028",
+    "raw_text": "@Lyft Cancellation fee charged when driver was stationary for 15 minutes!",
+    "clean_text": "Cancellation fee charged when driver was stationary for 15 minutes!",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Disputed cancellation charge.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10029",
+    "raw_text": "@PlayStationHelp My wallet auto-funded $50 without authorization. Please assist.",
+    "clean_text": "My wallet auto-funded $50 without authorization. Please assist.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Unauthorized automatic wallet funding transaction.",
+    "split": "test"
+  },
+  {
+    "id": "TW-10030",
+    "raw_text": "@ComcastCares Monthly bill went up from $60 to $85 without prior notification.",
+    "clean_text": "Monthly bill went up from $60 to $85 without prior notification.",
+    "intent": "Billing",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Rate hike complaint on monthly service charge.",
+    "split": "test"
+  },
+  {
+    "id": "TW-10031",
+    "raw_text": "@AppleSupport Forgot my Apple ID password and recovery phone number 312-555-0199 is no longer active.",
+    "clean_text": "Forgot my Apple ID password and recovery phone number 312-555-0199 is no longer active.",
+    "intent": "Account",
+    "sentiment": "Negative",
+    "pii_flag": true,
+    "pii_types": [
+      "phone_number"
+    ],
+    "rationale": "Account lockout and credential recovery problem. Direct phone number triggers PII flag.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10032",
+    "raw_text": "@Netflixhelp How do I remove a profile from my household group settings?",
+    "clean_text": "How do I remove a profile from my household group settings?",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account management and user profile configuration query.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10033",
+    "raw_text": "@Google360 Need to enable Two-Factor Authentication using security key for primary admin account.",
+    "clean_text": "Need to enable Two-Factor Authentication using security key for primary admin account.",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account security setting update request.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10034",
+    "raw_text": "@SpotifyCares Can I merge two separate Spotify accounts into one Duo family plan?",
+    "clean_text": "Can I merge two separate Spotify accounts into one Duo family plan?",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account consolidation inquiry.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10035",
+    "raw_text": "@AirbnbHelp Someone logged into my account from an unrecognized IP address in Miami! Lock my account!",
+    "clean_text": "Someone logged into my account from an unrecognized IP address in Miami! Lock my account!",
+    "intent": "Account",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account security compromise alert. Urgency and panic present.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10036",
+    "raw_text": "@MicrosoftHelps Changing primary email address on Microsoft account for user Marcus Vance at 742 Evergreen Terrace.",
+    "clean_text": "Changing primary email address on Microsoft account for user Marcus Vance at 742 Evergreen Terrace.",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": true,
+    "pii_types": [
+      "full_name",
+      "street_address"
+    ],
+    "rationale": "Profile contact update. Street address and full name trigger PII flag.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10037",
+    "raw_text": "@Uber_Support How to permanently delete my rider account and clear personal data history?",
+    "clean_text": "How to permanently delete my rider account and clear personal data history?",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account deletion and privacy data erasure request.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10038",
+    "raw_text": "@PlayStationHelp Parent controls preventing child sub-account from accessing age-appropriate games.",
+    "clean_text": "Parent controls preventing child sub-account from accessing age-appropriate games.",
+    "intent": "Account",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Sub-account access permissions issue.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10039",
+    "raw_text": "@AmazonHelp My account has been placed on temporary hold for security verification. Please review.",
+    "clean_text": "My account has been placed on temporary hold for security verification. Please review.",
+    "intent": "Account",
+    "sentiment": "Negative",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account status suspension review request.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10040",
+    "raw_text": "@PayPal Transferring account ownership from personal to business entity type.",
+    "clean_text": "Transferring account ownership from personal to business entity type.",
+    "intent": "Account",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Account tier conversion query.",
+    "split": "test"
+  },
+  {
+    "id": "TW-10041",
+    "raw_text": "@Delta Shouting out flight attendant Sarah on DL1042 for being so kind to my elderly mother! Fantastic team!",
+    "clean_text": "Shouting out flight attendant Sarah on DL1042 for being so kind to my elderly mother! Fantastic team!",
+    "intent": "Other",
+    "sentiment": "Positive",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Non-actionable positive feedback and staff compliment. Routed to Other.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10042",
+    "raw_text": "@NikeService What are the store opening hours for your flagship downtown location on Thanksgiving Day?",
+    "clean_text": "What are the store opening hours for your flagship downtown location on Thanksgiving Day?",
+    "intent": "Other",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "General informational inquiry regarding store operating schedule.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10043",
+    "raw_text": "@Target Do you offer wheelchair accessibility rentals at the Minneapolis North branch?",
+    "clean_text": "Do you offer wheelchair accessibility rentals at the Minneapolis North branch?",
+    "intent": "Other",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "General store facility query.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10044",
+    "raw_text": "@AppleSupport Huge thanks to the Genius Bar staff at Fifth Ave store for fixing my screen in 30 mins!",
+    "clean_text": "Huge thanks to the Genius Bar staff at Fifth Ave store for fixing my screen in 30 mins!",
+    "intent": "Other",
+    "sentiment": "Positive",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Praise for service completion without active open request.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10045",
+    "raw_text": "@AmazonHelp Where can I submit product feedback and feature requests for Kindle Paperwhite?",
+    "clean_text": "Where can I submit product feedback and feature requests for Kindle Paperwhite?",
+    "intent": "Other",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "General feedback channel inquiry.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10046",
+    "raw_text": "@SpotifyCares Your end-of-year Wrapped statistics were so accurate this year! Loved the breakdown.",
+    "clean_text": "Your end-of-year Wrapped statistics were so accurate this year! Loved the breakdown.",
+    "intent": "Other",
+    "sentiment": "Positive",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Positive product feedback.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10047",
+    "raw_text": "@DoorDash_Help Do dashers bring thermal insulated bags for long distance orders?",
+    "clean_text": "Do dashers bring thermal insulated bags for long distance orders?",
+    "intent": "Other",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Logistics equipment inquiry.",
+    "split": "train"
+  },
+  {
+    "id": "TW-10048",
+    "raw_text": "@Steam_Support Wishing the customer support team a wonderful holiday season!",
+    "clean_text": "Wishing the customer support team a wonderful holiday season!",
+    "intent": "Other",
+    "sentiment": "Positive",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "Non-actionable seasonal greeting.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10049",
+    "raw_text": "@AirbnbHelp Are pets allowed in community rating discussions?",
+    "clean_text": "Are pets allowed in community rating discussions?",
+    "intent": "Other",
+    "sentiment": "Neutral",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "General policy question.",
+    "split": "val"
+  },
+  {
+    "id": "TW-10050",
+    "raw_text": "@Tesla Beautiful car design on the Model S Refresh! Keep up the innovation.",
+    "clean_text": "Beautiful car design on the Model S Refresh! Keep up the innovation.",
+    "intent": "Other",
+    "sentiment": "Positive",
+    "pii_flag": false,
+    "pii_types": [],
+    "rationale": "General brand appreciation praise.",
+    "split": "test"
+  }
+]
